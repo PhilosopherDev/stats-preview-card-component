@@ -165,13 +165,30 @@ table {
     border-radius: 5px 0 0 5px;
 }
 
-.card__img {
-    background-image: url(./images/image-header-desktop.jpg);
-    background-size: cover;
+.card__img-box {
+    position: relative;
     width: 50%;
     height: 100%;
     float: right;
+}
+
+.card__img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
     border-radius: 0 5px 5px 0;
+}
+
+.card__img {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    mix-blend-mode: multiply;
 }
 
 .card__content {
@@ -245,11 +262,19 @@ table {
         border-radius: 0 0 5px 5px;
     }
 
-    .card__img {
-        background-image: url(./images/image-header-mobile.jpg);
-        float: none;
+    .card__img-overlay {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card__img-box {
         width: 100%;
         height: 240px;
+        float: none;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card__img {
+        background-image: url(./images/image-header-mobile.jpg);
         border-radius: 5px 5px 0 0;
     }
 
