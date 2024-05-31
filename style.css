@@ -1,0 +1,201 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    box-sizing: content-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    border: 3px solid black;
+    width: 1100px;
+    height: 450px;
+}
+
+.card__img {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border: 3px solid salmon;
+    float: right;
+}
+
+.card__content {
+    width: 50%;
+    height: 100%;
+    border: 3px solid blue;
+}
+
+.card__indicator {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__indicator-item {
+    width: 100%;
+    height: 30px;
+    border: 3px green solid;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        border: 3px solid black;
+        width: 300px;
+        height: auto;
+    }
+
+    .card__img {
+        background-image: url(./images/image-header-mobile.jpg);
+        float: none;
+        height: 240px;
+    }
+
+    .card__img {
+        width: 100%;
+    }
+
+    .card__content {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__indicator {
+        flex-direction: column;
+    }
+}
