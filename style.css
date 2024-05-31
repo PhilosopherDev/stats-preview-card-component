@@ -162,7 +162,7 @@ table {
     height: 450px;
     background-color: var(--card-bg-color);
     color: var(--main-head-color);
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
 }
 
 .card__img-box {
@@ -179,7 +179,7 @@ table {
     width: 100%;
     height: 100%;
     background-color: var(--accent);
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .card__img {
@@ -187,8 +187,9 @@ table {
     background-size: cover;
     width: 100%;
     height: 100%;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
     mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 
 .card__content {
@@ -259,23 +260,23 @@ table {
     .card {
         width: 320px;
         height: auto;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 10px 10px;
     }
 
     .card__img-overlay {
-        border-radius: 5px 5px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
     .card__img-box {
         width: 100%;
         height: 240px;
         float: none;
-        border-radius: 5px 5px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
     .card__img {
         background-image: url(./images/image-header-mobile.jpg);
-        border-radius: 5px 5px 0 0;
+        border-radius: 10px 10px 0 0;
     }
 
     .card__content {
