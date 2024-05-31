@@ -7,7 +7,12 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Stats preview card component</title>
   </style>
 </head>
@@ -16,16 +21,26 @@
 
   <div class="container">
     <div class="card">
-      <div class="card__img">
-        <img src="" alt="">
-      </div>
+      <div class="card__img"></div>
       <div class="card__content">
-        <div class="card__title"></div>
-        <div class="card__desc"></div>
+        <div class="card__title">Get <span class="card__title_color-accent">insights</span> that help your business
+          grow.
+        </div>
+        <div class="card__desc">Discover the benefits of data analytics and make better decisions regarding revenue,
+          customer experience, and overall efficiency.</div>
         <div class="card__indicator">
-          <div class="card__indicator-item"></div>
-          <div class="card__indicator-item"></div>
-          <div class="card__indicator-item"></div>
+          <div class="card__indicator-item">
+            <p class="indicator-item__title">10k+</p>
+            <p class="indicator-item__desc">companies</p>
+          </div>
+          <div class="card__indicator-item">
+            <p class="indicator-item__title">314</p>
+            <p class="indicator-item__desc">templates</p>
+          </div>
+          <div class="card__indicator-item">
+            <p class="indicator-item__title">12M+</p>
+            <p class="indicator-item__desc">queries</p>
+          </div>
         </div>
       </div>
     </div>
